@@ -19,4 +19,9 @@ import SupportIcon from './icons/IconSupport.vue'
     <a href="https://en.wikipedia.org/wiki/Crash_Bandicoot" target="_blank" rel="noopener">Crash</a>
     .
   </WelcomeItem>
+
+  <WelcomeItem>
+    <template #heading>Second Item</template>
+  </WelcomeItem>
+
 </template>
