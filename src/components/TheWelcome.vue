@@ -13,10 +13,10 @@ import SupportIcon from './icons/IconSupport.vue'
       <CommunityIcon />
     </template>
 
-    <template #heading>Crash Bandicoot</template>
+    <template #heading>My Projects</template>
 
     This is a section I added that is for the one and only
     <a href="https://en.wikipedia.org/wiki/Crash_Bandicoot" target="_blank" rel="noopener">Crash</a>
-    Bandicoot.
+    .
   </WelcomeItem>
 </template>

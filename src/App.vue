@@ -8,7 +8,7 @@ import TheWelcome from './components/TheWelcome.vue'
     <img alt="Rat logo" class="logo" src="./assets/logoRat.svg" width="125" height="125" />
 
     <div class="wrapper">
-      <HelloWorld msg="Crash Bandicoot" />
+      <HelloWorld msg="Andrew Koller" />
     </div>
   </header>
 
