@@ -18,7 +18,7 @@ const props = defineProps({
 <style scoped>
 .project-tile {
   margin-right: 20px; /* Space between tiles */
-  width: 200px; /* Or any specific width */
+  width: 200px;
 }
 
 .project-image {

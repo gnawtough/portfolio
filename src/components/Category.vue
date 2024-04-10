@@ -2,7 +2,6 @@
 import Project from './Project.vue';
 import { defineProps } from 'vue';
 
-// Automatically infers the type based on the default value or initial call
 const props = defineProps({
   category: Object
 });
