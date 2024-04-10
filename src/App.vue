@@ -1,5 +1,5 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import Intro from './components/Introduction.vue'
 import LandingPage from "@/components/LandingPage.vue";
 </script>
 
@@ -8,18 +8,17 @@ import LandingPage from "@/components/LandingPage.vue";
     <img alt="Rat logo" class="logo" src="./assets/logoRat.svg" width="125" height="125" />
 
     <div class="wrapper">
-      <HelloWorld msg="Andrew Koller" />
+      <Intro msg="Andrew Koller" />
     </div>
   </header>
 
-
   <main>
     <LandingPage />
-
   </main>
 </template>
 
 <style scoped>
+
 header {
   line-height: 1.5;
 }
@@ -31,8 +30,8 @@ header {
 
 @media (min-width: 1024px) {
   header {
-    display: flex;
-    place-items: center;
+    display: inline-flex;
+    place-items: flex-start;
     padding-right: calc(var(--section-gap) / 2);
   }
 
@@ -41,7 +40,7 @@ header {
   }
 
   header .wrapper {
-    display: flex;
+    display: inline-flex;
     place-items: flex-start;
     flex-wrap: wrap;
   }
