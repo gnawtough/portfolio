@@ -1,8 +1,9 @@
 @import './base.css';
 
 #app {
-  display: flex;
+  display: grid;
   flex-direction: column;
+  padding: 20px;
 }
 
 a,
@@ -21,13 +22,13 @@ a,
 
 @media (min-width: 1024px) {
   body {
-    display: flex;
+    display: grid;
     place-items: center;
   }
 
   #app {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+    grid-template-columns: 1fr;
+    padding: 20px;
   }
 }
