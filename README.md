@@ -29,7 +29,10 @@
 #### My own notes:
 Use vue router to handle transitions for < cool > WebFlow 
 
-Main page:
+Landing page:   
+Hi welcome to my site blah blag blah about me below are some things I have worked on    
+Most are hobbies at this point  
+
     Category1:
         Project
         Project
