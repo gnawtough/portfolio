@@ -1,18 +1,19 @@
 <script setup>
-
+defineProps({
+  image: {
+    type: String,
+    required: true
+  }
+})
 </script>
 
 <template>
   <div class="image-divider">
-    <img src="@/assets/divider-image.svg" alt="Divider" />
+    <img :src=image alt="Divider" />
   </div>
 </template>
 
 <script>
-export default {
-  name: 'ImageDivider',
-  // props or data go here
-}
 </script>
 
 <style scoped>

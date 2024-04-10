@@ -5,7 +5,7 @@ import LogoRat from "@/components/icons/IconCommunity.vue";
 
 <template>
   <Category>
-    <template #preview>
+    <template #preview> <!-- TODO: add my own icon -->
       <LogoRat />
     </template>
 

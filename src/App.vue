@@ -1,6 +1,7 @@
 <script setup>
 import Intro from './components/Introduction.vue'
 import LandingPage from "@/components/LandingPage.vue";
+import ImageDivider from "@/components/ImageDivider.vue";
 </script>
 
 <template>
@@ -11,6 +12,8 @@ import LandingPage from "@/components/LandingPage.vue";
       <Intro msg="Andrew Koller" />
     </div>
   </header>
+
+  <ImageDivider image="@/assets/logo.svg" />
 
   <main>
     <LandingPage />
