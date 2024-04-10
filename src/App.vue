@@ -1,6 +1,7 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+import Greeting from './components/Greeting.vue'
 </script>
 
 <template>
@@ -12,8 +13,14 @@ import TheWelcome from './components/TheWelcome.vue'
     </div>
   </header>
 
+  <div id="greeting">
+    <Greeting greetingMessage="Goodbye, Stinkers!"/>
+  </div>
+
+
   <main>
     <TheWelcome />
+
   </main>
 </template>
 
