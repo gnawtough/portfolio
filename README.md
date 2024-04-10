@@ -1,29 +1,51 @@
-# portfolio
+# Andrew Koller Portfolio
 
-This template should help get you started developing with Vue 3 in Vite.
 
-## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-## Customize configuration
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
 
-```sh
-npm install
-```
 
-### Compile and Hot-Reload for Development
 
-```sh
-npm run dev
-```
 
-### Compile and Minify for Production
 
-```sh
-npm run build
-```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### My own notes:
+Use vue router to handle transitions for < cool > WebFlow 
+
+Landing page:   
+Hi welcome to my site blah blag blah about me below are some things I have worked on    
+Most are hobbies at this point  
+
+    Category1:
+        Project
+        Project
+        Project
+    Category2:
+        project
+        project
+        project
+    Category3:
+        project
+
+Projects in "tiles" horizontally? or like https://www.tilebit.io/   
+When you click on a project it pops out like a popup add??
+
+Project 1:  
+I wanted to go through the entire product development cycle.
