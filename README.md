@@ -27,7 +27,7 @@
 
 
 #### My own notes:
-Use vue router to handle transitions
+Use vue router to handle transitions for < cool > WebFlow 
 
 Main page:
     Category1:
