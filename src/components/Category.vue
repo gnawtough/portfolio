@@ -1,24 +1,21 @@
+<script setup>
+import Project from './Project.vue';
+import { defineProps } from 'vue';
+
+// Automatically infers the type based on the default value or initial call
+const props = defineProps({
+  category: Object
+});
+</script>
+
 <template>
   <div class="category">
-    <h2>{{ category.name }}</h2>
+    <h2>{{ props.category.name }}</h2>
     <div class="projects-container">
-      <Project v-for="project in category.projects" :key="project.id" :project="project" />
+      <Project v-for="project in props.category.projects" :key="project.id" :project="project" />
     </div>
   </div>
 </template>
-
-<script>
-import Project from './Project.vue';
-
-export default {
-  components: {
-    Project
-  },
-  props: {
-    category: Object
-  }
-};
-</script>
 
 <style scoped>
 .projects-container {

@@ -1,18 +1,19 @@
+<script setup>
+import { defineProps } from 'vue';
+
+const props = defineProps({
+  project: Object
+});
+
+</script>
+
 <template>
   <div class="project-tile">
-    <img :src="project.imageUrl" alt="" class="project-image">
-    <h3>{{ project.title }}</h3>
-    <p>{{ project.description }}</p>
+    <img :src="props.project.imageUrl" class="project-image" alt="Bingus">
+    <h3>{{ props.project.title }}</h3>
+    <p>{{ props.project.description }}</p>
   </div>
 </template>
-
-<script>
-export default {
-  props: {
-    project: Object
-  }
-};
-</script>
 
 <style scoped>
 .project-tile {
