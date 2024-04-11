@@ -1,19 +1,28 @@
-<script setup>
-</script>
 <template>
-  <div class="item">
-    <i>
-      <slot name="preview"></slot>
-    </i>
-    <div class="details">
-      <h3>
-        <slot name="title"></slot>
-      </h3>
-      <slot></slot>
+  <div class="category">
+    <h2>{{ category.name }}</h2>
+    <div class="projects-container">
+      <Project v-for="project in category.projects" :key="project.id" :project="project" />
     </div>
   </div>
 </template>
 
-<style scoped>
+<script>
+import Project from './Project.vue';
 
+export default {
+  components: {
+    Project
+  },
+  props: {
+    category: Object
+  }
+};
+</script>
+
+<style scoped>
+.projects-container {
+  display: flex;
+  overflow-x: auto; /* Allows horizontal scrolling for overflow */
+}
 </style>
