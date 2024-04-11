@@ -13,19 +13,18 @@ import ImageDivider from "@/components/ImageDivider.vue";
     </div>
   </header>
 
-  <div>
-    <ImageDivider />
-  </div>
-
   <main>
+    <div>
+      <ImageDivider />
+    </div>
+
     <div class="project">
       <Projects />
     </div>
   </main>
 
-  <div>
-    <ImageDivider />
-  </div>
+
+
 </template>
 
 <style scoped>
