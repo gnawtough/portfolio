@@ -1,23 +1,31 @@
 <script setup>
-import Intro from './components/Introduction.vue'
-import LandingPage from "@/components/LandingPage.vue";
+import Intro from '@/components/Introduction.vue'
+import Projects from "@/components/Projects.vue";
 import ImageDivider from "@/components/ImageDivider.vue";
 </script>
 
 <template>
   <header>
-    <img alt="Rat logo" class="logo" src="./assets/logoRat.svg" width="125" height="125" />
+    <img alt="Rat logo" class="logo" src="@/assets/logoRat.svg" width="125" height="125" />
 
     <div class="wrapper">
       <Intro msg="Andrew Koller" />
     </div>
   </header>
 
-  <ImageDivider image="@/assets/logo.svg" />
+  <div>
+    <ImageDivider />
+  </div>
 
   <main>
-    <LandingPage />
+    <div class="project">
+      <Projects />
+    </div>
   </main>
+
+  <div>
+    <ImageDivider />
+  </div>
 </template>
 
 <style scoped>
@@ -33,8 +41,7 @@ header {
 
 @media (min-width: 1024px) {
   header {
-    display: inline-flex;
-    place-items: flex-start;
+    display: flex;
     padding-right: calc(var(--section-gap) / 2);
   }
 
@@ -42,9 +49,17 @@ header {
     margin: 0 2rem 0 0;
   }
 
-  header .wrapper {
+  .divider {
+    display: inline-grid;
+    margin: 0;
+  }
+
+  .category {
     display: inline-flex;
-    place-items: flex-start;
+  }
+
+  header .wrapper {
+    display: flex;
     flex-wrap: wrap;
   }
 }

@@ -1,20 +1,11 @@
 <script setup>
-defineProps({
-  image: {
-    type: String,
-    required: true
-  }
-})
 </script>
 
 <template>
   <div class="image-divider">
-    <img :src=image alt="Divider" />
+    <img src="@/assets/logoRat.svg" alt="Divider" />
   </div>
 </template>
-
-<script>
-</script>
 
 <style scoped>
 .image-divider {
