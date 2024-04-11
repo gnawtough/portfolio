@@ -1,7 +1,5 @@
 <script setup>
 import Project from './Project.vue';
-import { defineProps } from 'vue';
-
 const props = defineProps({
   category: Object
 });
