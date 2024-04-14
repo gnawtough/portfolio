@@ -7,7 +7,9 @@ const props = defineProps({
 
 <template>
   <div class="project-tile">
-    <img :src="props.project.imageUrl" class="project-image" alt="Bingus">
+    <div class="image-container">
+      <img :src="props.project.imageUrl" class="project-image" alt="Bingus">
+    </div>
     <h3 class="project-text">{{ props.project.title }}</h3>
     <p class="project-text">{{ props.project.description }}</p>
   </div>
@@ -16,19 +18,30 @@ const props = defineProps({
 <style scoped>
 .project-tile {
   background: #282828;
-  margin-right: 20px; /* Space between tiles */
-  width: 200px;
-  border-radius: 20px;
+  margin-right: 1rem; /* Space between tiles */
+  width: 12rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.image-container {
+  width: 100%; /* Full width of the tile */
+  height: 8rem; /* Fixed height for the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Clip the image if it's too large */
+  margin-top: 1rem;
 }
 
 .project-image {
-  width: 90%;
-  height: auto; /* Maintain aspect ratio */
-  margin: 20px 20px 20px 10px;
-  border-radius: 20px;
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  border-radius: 1rem;
 }
 
 .project-text {
-  margin: 0 0 0 10px;
+  margin: 0 0 1rem 1rem;
 }
 </style>
