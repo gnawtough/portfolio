@@ -26,7 +26,7 @@ const props = defineProps({
 
 .image-container {
   width: 100%; /* Full width of the tile */
-  height: 8rem; /* Fixed height for the image */
+  height: 10rem; /* Fixed height for the image */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,6 +42,6 @@ const props = defineProps({
 }
 
 .project-text {
-  margin: 0 0 1rem 1rem;
+  margin: 0 1rem 1rem 1rem;
 }
 </style>
