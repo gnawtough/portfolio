@@ -25,7 +25,7 @@ const props = defineProps({
 }
 
 .project-tile:hover {
-  background: gray;
+  background: darkgray;
 }
 
 .image-container {
