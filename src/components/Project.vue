@@ -24,6 +24,10 @@ const props = defineProps({
   overflow: hidden;
 }
 
+.project-tile:hover {
+  background: green;
+}
+
 .image-container {
   width: 100%; /* Full width of the tile */
   height: 10rem; /* Fixed height for the image */
